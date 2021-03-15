@@ -1,13 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import {getDetails} from '../actions'
 
 const Coin = props => {
+  console.log(props)
   return (
-    <div className="coin-card">
-      Coin
+    <div
+      onClick={() => props.getDetails(props.id)}
+      className="coin-card">
+      <img src={props.coinDetails.image.large} alt={props.coinDetails.name}/>
+      <p>{props.coinDetails.name}</p>
+      <p>{ props.coinDetails.symbol }</p>
     </div>
   )
 }
 
-export default connect(null)(Coin)
+
+export default connect(null, {getDetails})(Coin)

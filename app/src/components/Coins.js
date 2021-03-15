@@ -6,9 +6,15 @@ import { connect } from 'react-redux'
 const Coins = props => {
   return (
     <div id="coins">
-      Coins
+      {props.coins.map(coin => {
+        return <Coin key={coin.id} coinDetails={coin} />
+      })}
     </div>
   )
 }
 
-export default connect(null, null)(Coins)
+const mapStateToProps = (state) => {
+  return {coins: state.coins}
+}
+
+export default connect(mapStateToProps)(Coins)

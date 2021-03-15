@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -39,4 +41,31 @@ a {
   color: #fbf7f0;
   border: 2px solid #fbf7f0;
   scale: 1.1;
+}
+
+.button {
+  color:black;
+}
+
+#coins {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 2vw auto;
+}
+
+.coin-card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  border: 5px solid #555555;
+  border-radius: 8px;
+  padding: 0.5vw;
+  width: auto;
+}
+
+p {
+  font-size: 2rem;
+  margin: .5vw;
 }
