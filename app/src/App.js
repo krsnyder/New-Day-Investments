@@ -1,5 +1,5 @@
 import './App.css';
-import {Router, Switch} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import './App.css'
 import Nav from './components/Nav'
 import Home from './components/Home'
@@ -11,13 +11,14 @@ function App() {
       <Nav />
 
       <Switch>
-        <Router path="/">
-          <Home/>
-        </Router>
-
-        <Router path="coins">
+        <Route path="/coins">
           <Coins/>
-        </Router>
+        </Route>
+
+        <Route path="/">
+          <Home/>
+        </Route>
+
       </Switch>
     </div>
   );

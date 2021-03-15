@@ -6,7 +6,9 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #d9e4dd;
-  color: #cdc9c3;
+  color: #555555;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
@@ -16,4 +18,25 @@ body {
   width: 100%;
   background-color: #555555;
   color: #cdc9c3;
+  height: 5vw;
+}
+
+.link{
+  color:black;
+  margin: 0 2vw;
+}
+
+a { 
+  color:#d9e4dd;
+  margin: 0 1vw;
+  font-size: 2rem;
+  border: 2px solid #d9e4dd;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 3px 7px
+}
+.active {
+  color: #fbf7f0;
+  border: 2px solid #fbf7f0;
+  scale: 1.1;
 }
