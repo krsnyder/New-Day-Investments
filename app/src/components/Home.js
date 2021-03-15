@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home">
       <div className="home-content">
         <h1>New Day Finance</h1>
-        <Link className="button" to="/coins">Coin Info</Link>
+        <Link className="button" to="/coins">Click here to view our holdings</Link>
       </div>
     </div>
   )

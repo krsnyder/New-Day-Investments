@@ -20,6 +20,7 @@ export default function Nav() {
       >
         Coin List
       </NavLink>
+      <img src="../newdayicon.png" alt="New Day" />
     </div>
   )
 }
