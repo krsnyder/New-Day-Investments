@@ -4,8 +4,10 @@ import './App.css'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Coins from './components/Coins'
-
+// import React, {useState} from 'react'
+  
 function App() {
+
   return (
     <div className="App">
       <Nav />

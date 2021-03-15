@@ -2,12 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 export default function Nav() {
+
   return (
     <div className="nav">
       <NavLink
         activeClassName="active"
         className="link"
-        to="/"
+        exact to="/"
       >
         Home
       </NavLink>
@@ -15,7 +16,7 @@ export default function Nav() {
       <NavLink
         activeClassName="active"
         className="link"
-        to="/coins"
+        exact to="/coins"
       >
         Coin List
       </NavLink>

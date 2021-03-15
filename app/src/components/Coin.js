@@ -6,7 +6,7 @@ const Coin = props => {
   console.log(props)
   return (
     <div
-      onClick={() => props.getDetails(props.id)}
+      onClick={() => props.getDetails(props.coinDetails.id)}
       className="coin-card">
       <img src={props.coinDetails.image.large} alt={props.coinDetails.name}/>
       <p>{props.coinDetails.name}</p>

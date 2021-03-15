@@ -8,7 +8,7 @@ body {
   margin: 0%;
   padding: 0%;
   background-color: #d9e4dd;
-  color: #555555;
+  color: #d9e4dd;
   display: flex;
   flex-direction: column;
 }
@@ -23,11 +23,32 @@ body {
   height: 5vw;
 }
 
-.link{
-  color:black;
-  margin: 0 2vw;
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./newDay.webp');
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  height: 40vw;
 }
 
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+  width: 70vw;
+  padding: 1vw 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
 a { 
   color:#d9e4dd;
   margin: 0 1vw;
@@ -44,7 +65,7 @@ a {
 }
 
 .button {
-  color:black;
+  color: #d9e4dd;
 }
 
 #coins {
@@ -68,4 +89,5 @@ a {
 p {
   font-size: 2rem;
   margin: .5vw;
+  color: #555555
 }
