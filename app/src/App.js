@@ -5,9 +5,11 @@ import Nav from './components/Nav'
 import Home from './components/Home'
 import Coins from './components/Coins'
 import Details from './components/Details'
+import Loading from './components/Loading'
 import React from 'react'
+import {connect} from 'react-redux'
   
-function App() {
+function App(props) {
 
   return (
     <div className="App">
@@ -18,9 +20,12 @@ function App() {
             <Coins/>
           </Route>
 
-          <Route path="/details">
-            <Details/>
-          </Route>
+          {props.loading
+            ? < Loading />
+            : <Route path="/details">
+                <Details/>
+              </Route>
+          }
 
           <Route path="/">
             <Home/>
@@ -32,4 +37,10 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return ({
+    loading: state.loading
+  })
+}
+
+export default connect(mapStateToProps)(App);

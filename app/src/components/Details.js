@@ -24,7 +24,8 @@ const mapStateToProps = (state) => {
     image: state.currentCoin.image.large,
     price: state.currentCoin["market_data"]["current_price"].usd,
     description: state.currentCoin.description.en,
-    categories: state.currentCoin.categories
+    categories: state.currentCoin.categories,
+    loading: state.loading
   })
 }
 

@@ -26,7 +26,8 @@ const initialState = {
       }
     }
   ],
-  currentCoin: {test: "test"}
+  currentCoin: { test: "test" },
+  loading: false
 }
 
 const reducer = (state = initialState, action) => {
@@ -39,12 +40,13 @@ const reducer = (state = initialState, action) => {
     case (SET_CURRENT_COIN):
       return ({
         ...state,
-        currentCoin: action.payload
+        currentCoin: action.payload,
+        loading: false
       })
     case (LOADING_DETAILS):
       return ({
         ...state,
-        message: "Loading Details..."
+        loading: true
       })
     default:
       return state
