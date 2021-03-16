@@ -9,8 +9,12 @@ body {
   padding: 0%;
   background-color: #d9e4dd;
   color: #d9e4dd;
+}
+
+.content-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .nav {
@@ -90,4 +94,22 @@ p {
   font-size: 2rem;
   margin: .5vw;
   color: #555555
+}
+
+.header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.details {
+  margin: 2vw auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color: #555555;
+  padding: 0.5vw;
+  width: 50%;
 }

@@ -4,24 +4,30 @@ import './App.css'
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Coins from './components/Coins'
-// import React, {useState} from 'react'
+import Details from './components/Details'
+import React from 'react'
   
 function App() {
 
   return (
     <div className="App">
       <Nav />
+      <div className="content-wrapper">
+        <Switch>
+          <Route path="/coins">
+            <Coins/>
+          </Route>
 
-      <Switch>
-        <Route path="/coins">
-          <Coins/>
-        </Route>
+          <Route path="/details">
+            <Details/>
+          </Route>
 
-        <Route path="/">
-          <Home/>
-        </Route>
+          <Route path="/">
+            <Home/>
+          </Route>
 
-      </Switch>
+        </Switch>
+      </div>
     </div>
   );
 }

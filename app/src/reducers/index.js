@@ -1,4 +1,4 @@
-import { GET_DETAILS } from '../actions'
+import { SET_CURRENT_COIN, GET_COINS, LOADING_DETAILS } from '../actions'
 
 const initialState = {
   coins: [
@@ -25,15 +25,26 @@ const initialState = {
         "large": "https://assets.coingecko.com/coins/images/1102/large/enjin-coin-logo.png?1547035078"
       }
     }
-  ]
+  ],
+  currentCoin: {test: "test"}
 }
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case (GET_DETAILS):
+    case (GET_COINS):
       return ({
         ...state,
-
+        coins: action.payload
+      })
+    case (SET_CURRENT_COIN):
+      return ({
+        ...state,
+        currentCoin: action.payload
+      })
+    case (LOADING_DETAILS):
+      return ({
+        ...state,
+        message: "Loading Details..."
       })
     default:
       return state
