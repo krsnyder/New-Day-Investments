@@ -73,6 +73,7 @@ a {
   color: #d9e4dd;
 }
 
+/* Styling for the Coins component */
 #coins {
   display: flex;
   justify-content: space-between;
@@ -92,21 +93,13 @@ a {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.5vw;
   margin: .5vw;
   color: #555555
 }
 
-.header{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  border-bottom: solid 5px #555555;
-  margin-bottom: 2vw;
-}
-
-.details {
+/* Styling for the Details component */
+.details-container {
   margin: 2vw auto;
   display: flex;
   flex-direction: column;
@@ -115,4 +108,39 @@ p {
   color: #555555;
   padding: 0.5vw;
   width: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 5px #555555;
+  margin-bottom: 2vw;
+}
+
+.details {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.extras {
+  border: 1px solid black;
+  height:fit-content ;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  justify-content:center;
+}
+
+.description p {
+  font-size: 1.5vw;
+  width: 70%;
+}
+
+/* Loading page */
+.loading {
+  margin: 2vw;
 }

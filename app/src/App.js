@@ -21,7 +21,9 @@ function App(props) {
           </Route>
 
           {props.loading
-            ? < Loading />
+            ? <Route path="/details">
+                < Loading />
+              </Route>
             : <Route path="/details">
                 <Details/>
               </Route>

@@ -27,7 +27,7 @@ const initialState = {
     }
   ],
   currentCoin: { test: "test" },
-  loading: false
+  loading: true
 }
 
 const reducer = (state = initialState, action) => {
