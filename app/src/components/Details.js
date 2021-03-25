@@ -1,8 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 
 const Details = (props) => {
-  const [display, setDisplay] = useState(false)
+  // const [display, setDisplay] = useState(false)
 
   return (
     <div className="details-container">
