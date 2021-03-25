@@ -1,11 +1,146 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.gif {
-  width: 200px;
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #d9e4dd;
+  color: #d9e4dd;
 }
 
-.gif img {
-  width:200px;
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  width: 100%;
+  background-color: #555555;
+  color: #cdc9c3;
+  height: 5vw;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./newDay.webp');
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  height: 50vw;
+  width: 100%;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 15px;
+  width: 70vw;
+  padding: 1vw 0;
+}
+
+h1 {
+  font-size: 7vw;
+}
+a { 
+  color:#d9e4dd;
+  margin: 0 1vw;
+  font-size: 2vw;
+  border: 2px solid #d9e4dd;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 3px 7px
+}
+.active {
+  color: #fbf7f0;
+  border: 2px solid #fbf7f0;
+  scale: 1.1;
+}
+
+.button {
+  color: #d9e4dd;
+}
+
+/* Styling for the Coins component */
+#coins {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 2vw auto;
+}
+
+.coin-card {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  border: 5px solid #555555;
+  border-radius: 8px;
+  padding: 0.5vw;
+  width: auto;
+}
+
+p {
+  font-size: 1.5vw;
+  margin: .5vw;
+  color: #555555
+}
+
+/* Styling for the Details component */
+.details-container {
+  margin: 2vw auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color: #555555;
+  padding: 0.5vw;
+  width: 50%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 5px #555555;
+  margin-bottom: 2vw;
+}
+
+.details {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.extras {
+  border: 1px solid black;
+  height:fit-content ;
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  justify-content:center;
+}
+
+.description p {
+  font-size: 1.5vw;
+  width: 70%;
+}
+
+/* Loading page */
+.loading {
+  margin: 2vw;
 }
