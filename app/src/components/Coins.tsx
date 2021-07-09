@@ -2,17 +2,17 @@ import React from 'react'
 import Coin from './Coin'
 import { connect } from 'react-redux'
 
-type Props = {
-  coins: [{
+interface Props {
+  coins: {
     id: string;
     symbol: string;
     name: string;
     image: {
       large: string
     }
-  }]
+  }[]
 }
-const Coins = (props: Props) => {
+const Coins: React.FC<Props> = (props: Props) => {
   return (
     <div id="coins">
       {props.coins.map(coin => {

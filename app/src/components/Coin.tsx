@@ -2,7 +2,20 @@ import React from 'react'
 import { connect } from 'react-redux'
 import {getDetails} from '../actions'
 import {Link} from 'react-router-dom'
-const Coin = props => {
+
+interface Props {
+  coinDetails: {
+    id: string;
+    symbol: string;
+    name: string;
+    image: {
+      large: string
+    }
+  };
+  getDetails: (id: string) => {}
+}
+
+const Coin: React.FC<Props> = (props: Props) => {
   return (
     <Link to="/details">
       <div
