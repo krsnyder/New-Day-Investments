@@ -2,8 +2,17 @@ import React from 'react'
 import Coin from './Coin'
 import { connect } from 'react-redux'
 
-
-const Coins = props => {
+type Props = {
+  coins: [{
+    id: string;
+    symbol: string;
+    name: string;
+    image: {
+      large: string
+    }
+  }]
+}
+const Coins = (props: Props) => {
   return (
     <div id="coins">
       {props.coins.map(coin => {
@@ -13,7 +22,7 @@ const Coins = props => {
   )
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: any) => {
   return {coins: state.coins}
 }
 
